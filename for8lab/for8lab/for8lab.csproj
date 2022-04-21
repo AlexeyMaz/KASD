@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54CFF9BF-0031-400C-9780-E6033D0A6717}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>for8lab</RootNamespace>
+    <AssemblyName>for8lab</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutMeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutMeForm.Designer.cs">
+      <DependentUpon>AboutMeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCargo.Designer.cs">
+      <DependentUpon>AddCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargoesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CargoesReportForm.Designer.cs">
+      <DependentUpon>CargoesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CargoesReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CargoesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomersReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomersReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomersReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersReportForm.Designer.cs">
+      <DependentUpon>CustomersReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportForm.Designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_ShippingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SQL_ShippingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Данные\CargoesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Данные\CargoesForm.Designer.cs">
+      <DependentUpon>CargoesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Данные\CustomersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Данные\CustomersForm.Designer.cs">
+      <DependentUpon>CustomersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DispatchersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DispatchersForm.Designer.cs">
+      <DependentUpon>DispatchersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriversForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriversForm.Designer.cs">
+      <DependentUpon>DriversForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutMeForm.resx">
+      <DependentUpon>AboutMeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCargo.resx">
+      <DependentUpon>AddCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargoesReportForm.resx">
+      <DependentUpon>CargoesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CargoesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CargoesReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CustomersReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersReportForm.resx">
+      <DependentUpon>CustomersReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Данные\CargoesForm.resx">
+      <DependentUpon>CargoesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Данные\CustomersForm.resx">
+      <DependentUpon>CustomersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DispatchersForm.resx">
+      <DependentUpon>DispatchersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriversForm.resx">
+      <DependentUpon>DriversForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SQL_ShippingDataSet.xsc">
+      <DependentUpon>SQL_ShippingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SQL_ShippingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SQL_ShippingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SQL_ShippingDataSet.xss">
+      <DependentUpon>SQL_ShippingDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
